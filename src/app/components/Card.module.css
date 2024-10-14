@@ -1,0 +1,77 @@
+.card {
+    position: relative; /* Position for the filter overlay */
+    width: 300px; /* Card width */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+    background: #fff; /* Card background */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  }
+  
+  .filter {
+    position: absolute; /* Position for filter overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark filter overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Transition for overlay */
+  }
+  
+  .card:hover .filter {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .image {
+    width: 100%; /* Full width for image */
+    height: auto; /* Auto height for responsive image */
+    border-bottom: 2px solid #3498db; /* Bottom border for image */
+  }
+  
+  .priceTag {
+    position: absolute; /* Position for price tag */
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    background: #e74c3c; /* Price tag background color */
+    color: white; /* Price tag text color */
+    padding: 5px 10px; /* Padding for price tag */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .nameTag {
+    position: absolute; /* Position for name tag */
+    bottom: 50px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    background: rgba(255, 255, 255, 0.8); /* Background for name */
+    color: #333; /* Text color */
+    padding: 5px 10px; /* Padding for name tag */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .content {
+    padding: 20px; /* Padding for content */
+    display: flex; /* Flex layout for content */
+    justify-content: space-between; /* Space between content */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .editButton {
+    background: #3498db; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 12px; /* Button padding */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s; /* Transition for button hover effect */
+  }
+  
+  .editButton:hover {
+    background: #2980b9; /* Darker blue on hover */
+  }
